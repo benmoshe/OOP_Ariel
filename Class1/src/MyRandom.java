@@ -13,7 +13,7 @@ public class MyRandom {
         this(new Random().nextLong());
     }
     public double random() {
-        double ans = 0;
+        double ans;
         ans = this._rand.nextDouble();
         return ans;
     }
@@ -21,20 +21,20 @@ public class MyRandom {
         if(min>max) {
             throw new RuntimeException("ERR: random(min,max) should get a valid range [min,max). got ["+min+","+max+")");
         }
-        double ans = 0;
+        double ans;
         double r = random();
         double dx = max-min;
         ans  = min + dx*r;
         return ans;
     }
-    public double randomInt(int min, int max) {
+    public int randomInt(int min, int max) {
         if(min>max) {
             throw new RuntimeException("ERR: randomInt(min,max) should get a valid range [min,max). got ["+min+","+max+")");
         }
-        double ans = 0;
-        double dx = max-min;
+        int ans;
+        int dx = max-min;
         int randPosInt = Math.abs(_rand.nextInt());
-        double r = randPosInt % dx;
+        int r = randPosInt % dx;
         ans  = min + r;
         return ans;
     }
