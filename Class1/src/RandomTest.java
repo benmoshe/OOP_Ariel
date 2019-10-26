@@ -48,7 +48,20 @@ public class RandomTest {
         System.out.println("ave: "+ave+", sd: "+sd);
     }
     public static void test3() {
-
-
+        System.out.println();
+        System.out.println("***** Test3: *****");
+        int size = 10000;
+        double sum=0, sum2=0;
+        int seed = 12345;
+        int[] his = new int[100];
+        MyRandom r = new MyRandom(seed);
+        for(int i=0;i<size;i++) {
+            double d = r.nextGaussian();
+            double in = 50 + (d*10);
+            his[(int)in]++;
+        }
+        for(int i=0;i<100;i++) {
+            System.out.println(i+", "+his[i]+",");
+        }
     }
 }

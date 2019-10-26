@@ -17,6 +17,13 @@ public class MyRandom {
         ans = this._rand.nextDouble();
         return ans;
     }
+
+    /**
+     * Computes a random double value between [min,max)
+     * @param min lowest value (lowwer bound - close range).
+     * @param max highes value (upper bound - open range).
+     * @return a random value within [min,max)
+     */
     public double random(double min, double max) {
         if(min>max) {
             throw new RuntimeException("ERR: random(min,max) should get a valid range [min,max). got ["+min+","+max+")");
@@ -27,6 +34,12 @@ public class MyRandom {
         ans  = min + dx*r;
         return ans;
     }
+    /**
+     * Computes a random integer value between [min,max)
+     * @param min lowest value (lowwer bound - close range).
+     * @param max highes value (upper bound - open range).
+     * @return a random value within [min,max)
+     */
     public int randomInt(int min, int max) {
         if(min>max) {
             throw new RuntimeException("ERR: randomInt(min,max) should get a valid range [min,max). got ["+min+","+max+")");
@@ -36,6 +49,10 @@ public class MyRandom {
         int randPosInt = Math.abs(_rand.nextInt());
         int r = randPosInt % dx;
         ans  = min + r;
+        return ans;
+    }
+    public double nextGaussian() {
+        double ans = this._rand.nextGaussian();
         return ans;
     }
 }
