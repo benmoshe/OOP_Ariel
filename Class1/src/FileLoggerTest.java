@@ -1,5 +1,5 @@
 /**
- * This class represents a simple demo of using text files as logger.
+ * This class represents a simple demo for using text files as logger.
  */
 public class FileLoggerTest {
     public static void main(String[] a) {

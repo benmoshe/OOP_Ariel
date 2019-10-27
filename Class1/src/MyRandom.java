@@ -1,6 +1,8 @@
 import java.util.Random;
 /**
- * This class represents a set of mathemticly function related to random number
+ * This class represents a set of mathematically functions related
+ * to random number generator, the main focus is to simplifies the use
+ * of random numbers.
  */
 public class MyRandom {
     private long _seed;

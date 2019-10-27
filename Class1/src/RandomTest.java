@@ -1,7 +1,12 @@
 import java.util.ArrayList;
 
 /**
- * This class represents a simple (not JUnot) tester for the Random class
+ * This class represents a simple (not JUnןt) tester for the Random class
+ Output example:
+ ***** Test1: *****
+ a[1]=17.0% , a[2]=17.89% , a[3]=17.39% , a[4]=14.7% , a[5]=15.8% , a[6]=17.2% ,
+
+
  */
 public class RandomTest {
     public static void main(String[] a) {
@@ -11,7 +16,7 @@ public class RandomTest {
     }
     public static void test1() {
         System.out.println("***** Test1: *****");
-        MyRandom r = new MyRandom(123);
+        MyRandom r = new MyRandom(12345);
         int[] arr = new int[7];
         double size = 1000;
         for(int i=0;i<size;i++) {

@@ -1,11 +1,13 @@
-/**
- * This class represents a simple file based logger. The main use is to simplify the use of text-files
- */
+
 
 import java.io.File;
 import java.io.FileWriter;
 import java.util.Date;
 
+/**
+ * This class represents a simple file based logger.
+ * The main use is to simplify the use of text-files and keep it simple.
+ */
 
 public class FileLogger {
     public static final String  START_NAME = "FileLogger_";
