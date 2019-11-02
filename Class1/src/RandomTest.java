@@ -16,7 +16,7 @@ public class RandomTest {
     }
     public static void test1() {
         System.out.println("***** Test1: *****");
-        MyRandom r = new MyRandom(12345);
+        MyRandom r = new MyRandom(1);
         int[] arr = new int[7];
         double size = 1000;
         for(int i=0;i<size;i++) {
