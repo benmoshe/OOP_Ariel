@@ -8,7 +8,7 @@ public class FileLoggerTest {
     }
     public static void test1() {
         MyRandom r = new MyRandom(123);
-        FileLogger fl = new FileLogger("11.txt"); // date based (now) file name
+        FileLogger fl = new FileLogger(); // date based (now) file name
         System.out.println("***** FileLogger - Tester: *****");
         fl.log("this is a first line");
         fl.log("second line");

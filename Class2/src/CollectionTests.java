@@ -39,7 +39,7 @@ public class CollectionTests {
      */
     public static void test2() {
         System.out.println();
-        String[] arr = {"one", "two", "three"};
+        String[] arr = {"zero","one", "two", "three"};
         HashMap<Integer, String> map = new  HashMap<Integer, String>();
         for(int i=0;i<arr.length;i++) {
             map.put(i, arr[i]);

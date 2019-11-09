@@ -1,7 +1,7 @@
 /**
  * This class represents a Form calculator,
  * A form is:
- * (i) a simple integer
+ * (i) a simple real (i.e., double)
  *  (ii) (form op form)
  *  For example: 3, (3+4), (3*(4-1)), (((1.5))*((1.5*4)*(2.5*(4-2))))
  */
@@ -104,7 +104,7 @@ public class FormCalculator {
      * @param s simple Form like String
      * @return: a simplified String, or the same string of nothing to simplified.
      */
-    public static String simplify(String s) {
+    private static String simplify(String s) {
         int len = s.length();
         if (s != null && len > 1) {
             if (s.charAt(0) == '(' && s.charAt(len-1) == ')') {
