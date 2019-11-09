@@ -1,18 +1,15 @@
 import org.junit.Test;
-
 import static org.junit.Assert.*;
-
 /**
  * This class is a simple (and mostly partial) Junit tester for the class Point3D
  * Make sure you can compile it, run it, and add additional testing methods.
  */
 public class Point3DTest {
-
     @Test
     /**
      * test if the add (aka translate) method is working as expected - as a simple vector translation.
      */
-    public void add() {
+    public void addTest() {
         double x0=1,y0=2, z0=3;
         double x1=10,y1=100, z1=1000;
         Point3D p0 = new Point3D(x0,y0,z0);
@@ -23,7 +20,7 @@ public class Point3DTest {
     }
 
     @Test
-    public void factor() {
+    public void factorTest() {
         double f1 = 1, f2=2, f3 = -0.3;
         Point3D p0 = new Point3D(1,2,3);
         Point3D p1 = new Point3D(p0);
@@ -39,11 +36,11 @@ public class Point3DTest {
     }
 
     @Test
-    public void toString1() {
+    public void toStringTest() {
     }
 
     @Test
-    public void distance3D() {
+    public void distance3DTest() {
         double x=3,y=4, z=0, r=5;
         Point3D p = new Point3D(x,y,z);
         double d2 = p.distance3D();
@@ -64,7 +61,7 @@ public class Point3DTest {
     }
 
     @Test
-    public void equals1() {
+    public void equalsTest() {
         int size=10;
         for(int i=0;i<size;i++) {
             double x=Math.random();
@@ -88,5 +85,6 @@ public class Point3DTest {
      */
     @Test
     public void pointLineTest2() {
+        // TBD - please update your testing code here
     }
 }
