@@ -5,6 +5,7 @@
  *  Execution:    java StdDraw
  *  Dependencies: none
  *
+ *
  *  Standard drawing library. This class provides a basic capability for
  *  creating drawings with your programs. It uses a simple graphics model that
  *  allows you to create drawings consisting of points, lines, and curves
