@@ -10,7 +10,7 @@ public class TestStdDraw {
 		StdDraw.setPenColor(StdDraw.MAGENTA);
 		StdDraw.line(0.2, 0.2, 0.8, 0.3);
 		StdDraw.setPenColor(StdDraw.BLACK);
-//		StdDraw.circle(100, 100, 0.5);
+
 	}
 
 }
