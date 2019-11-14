@@ -23,6 +23,11 @@ class Points3DTest {
 
     @Test
     void save() {
+        String file_name = "test_for_Point3D.mytest";
+        _pp0.save(file_name);
+        Points3D pp3  = new Points3D();
+        pp3.load(file_name);
+        assertEquals(pp3,_pp0);
     }
 
     @Test
@@ -32,6 +37,7 @@ class Points3DTest {
     @Test
     void equals1() {
         assertEquals(_pp0, _pp1);
+        _pp0.add(Point3D.ORIGIN);
         _pp1.add(Point3D.ORIGIN);
         _pp1.add(Point3D.ORIGIN);
         _pp1.add(Point3D.ORIGIN);
