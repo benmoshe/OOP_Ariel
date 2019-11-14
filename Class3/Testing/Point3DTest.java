@@ -26,6 +26,7 @@ public class Point3DTest {
         Point3D p1 = new Point3D(p0);
         p1.factor(1);
         assertEquals(p0,p1);
+
         p1.factor(f2);
         p1.factor(1/f2);
         assertEquals(p0,p1);
@@ -37,7 +38,13 @@ public class Point3DTest {
 
     @Test
     public void toStringTest() {
+        double x=3,y=4, z=0, r=5;
+        Point3D p = new Point3D(x,y,z);
+        String s = p.toString();
+        Point3D q = new Point3D(s);
+        assertEquals(q,p);
     }
+
 
     @Test
     public void distance3DTest() {
@@ -100,7 +107,7 @@ public class Point3DTest {
      *      ERROR: a==b || a==null || b == null;                               <br>
      */
     @Test
-    public void pointLineTest2() {
+    public void pointLineTest() {
         int expected = Point3D.ERROR;
         Point3D a = null, b = null;
         Point3D p = new Point3D(1,2,3);
@@ -134,5 +141,18 @@ public class Point3DTest {
             fail("should be left as: p="+pl+"  a="+a+", b="+b);
         }
         assertEquals(r,Point3D.RIGHT);
+    }
+    @Test
+    public void PointEqualsTest() {
+        Point3D p0 = new Point3D(1,2,3);
+        Point3D p1 = new Point3D(p0);
+        Point3D p2 = new Point3D(p1.toString());
+        if(!p0.equals(p1)) {
+            fail("Err: Point p0 should be equals to p1: got: p0:"+p0+"  p1:"+p1);
+        }
+        assertEquals(p1,p2);
+        assertEquals(p2,p0);
+        p2.add(p1);
+        assertNotEquals(p1,p2);
     }
 }

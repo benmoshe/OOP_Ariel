@@ -174,7 +174,6 @@ public class Point3D implements Serializable
     public int pointLineTest(Point3D a, Point3D b) {
 
         if(a== null || b==null || a.equalsXY(b)) return ERROR;
-        if(a== null || b==null || a.equalsXY(b)) return ERROR;
 
         double dx = b._x-a._x;
         double dy = b._y-a._y;

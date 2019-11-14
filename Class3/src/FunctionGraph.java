@@ -4,7 +4,6 @@
  */
 //package stdDraw;
 
-
 import java.awt.Color;
 import java.awt.Font;
 
@@ -35,7 +34,7 @@ public class FunctionGraph {
 		for (double i = minY; i <= maxY; i=i+0.5) {
 			StdDraw.line(0, i, Math.PI, i);
 		}
-		//////// x axis		
+		//////// x axis
 		StdDraw.setPenColor(Color.BLACK);
 		StdDraw.setPenRadius(0.005);
 		StdDraw.line(0, y[n/2], Math.PI, y[n/2]);
@@ -43,7 +42,7 @@ public class FunctionGraph {
 		for (int i = 0; i <= n; i=i+10) {
 			StdDraw.text(x[i]-0.07, -0.07, Integer.toString(i-n/2));
 		}
-		//////// y axis	
+		//////// y axis
 		StdDraw.line(x[n/2], minY, x[n/2], maxY);
 		for (double i = minY; i <= maxY; i=i+0.5) {
 			StdDraw.text(x[n/2]-0.07, i+0.07, Double.toString(i));
