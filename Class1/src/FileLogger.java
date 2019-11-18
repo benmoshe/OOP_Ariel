@@ -7,6 +7,7 @@ import java.util.Date;
 /**
  * This class represents a simple file based logger.
  * The main use is to simplify the use of text-files and keep it simple.
+ * Note: the default log file name is auto-ganerated by _FileLogger_+time(ms).txt
  */
 
 public class FileLogger {
