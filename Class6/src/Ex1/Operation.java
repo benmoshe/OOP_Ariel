@@ -5,6 +5,7 @@ package Ex1;
  * @author boaz_benmoshe
  *
  */
+
 public enum Operation {
 	Plus, Times, Divid, Max, Min, Comp , None, Error
 }

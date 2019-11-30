@@ -4,6 +4,7 @@ package Ex1;
  * This class represents a simple sin(x) function (actually sin(f(x))).
  * It is mainly used as an example for demonstrating Ex1
  *
+ *
  */
 public class Sinus implements function{
 	private function _parm_func;

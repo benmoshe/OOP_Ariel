@@ -3,7 +3,10 @@ package Ex1;
 import java.awt.*;
 import java.util.ArrayList;
 
-
+/**
+ * This class demonstrate a simple set of sin funxtions and draw them in a GUI window.
+ * A trivial example of inner class is also presented.
+ */
 class Sinus_Main {
 	public static Color[] Colors = {Color.blue, Color.cyan, Color.MAGENTA, Color.ORANGE, 
 			Color.red, Color.GREEN, Color.PINK};

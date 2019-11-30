@@ -2,8 +2,9 @@ package Ex1;
 /** This interface represents a complex function of type y=g(f1(x), f2(x)), where both f1, f2 are functions (or complex functions), 
  * y and x are real numbers and g is an operation: plus, mul, div, max, min, comp (f1(f2(x))).
 **/
+
 public interface complex_function extends function{
-	
+
 	/** Add to this complex_function the f1 complex_function
 	 * 
 	 * @param f1 the complex_function which will be added to this complex_function.

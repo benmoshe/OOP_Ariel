@@ -7,9 +7,11 @@ import java.util.Comparator;
  * This class represents a simple "Monom" of shape a*x^b, where a is a real number and a is an integer (summed a none negative), 
  * see: https://en.wikipedia.org/wiki/Monomial 
  * The class implements function and support simple operations as: construction, value at x, derivative, add and multiply. 
+ * Note: this is only a partial solution as it is part of Ex0 & Ex1
  * @author Boaz
  *
  */
+
 public class Monom implements function{
 	public static final Monom ZERO = new Monom(0,0);
 	public static final Monom MINUS1 = new Monom(-1,0);
