@@ -94,7 +94,8 @@ public class FormCalculator {
                 Double.parseDouble(s1);
                 ans = true;
             }
-            catch(Exception e) {;}
+            catch(Exception e) {
+            }
         }
         return ans;
     }
@@ -138,7 +139,8 @@ public class FormCalculator {
             try{
                 ans = Double.parseDouble(s1); // better than "new Double(s1);"
             }
-            catch(Exception e) {;}
+            catch(Exception e) {
+            }
         }
         return ans;
     }
