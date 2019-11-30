@@ -1,7 +1,7 @@
 package deadlock;
 
 class FirstThread extends Thread{
-	Point resource1, resource2;
+	deadlock.Point resource1, resource2;
 	public FirstThread(Point resource1, Point resource2) {
 		this.resource1 = resource1;
 		this.resource2 = resource2;
