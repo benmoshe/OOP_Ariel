@@ -11,7 +11,7 @@ import java.util.Iterator;
  * 1. Init:
  * 1.1 Init(String), e.g., {"x", "3+1.4X^3-34x", "(2x^2-4)*(-1.2x-7.1)", "(3-3.4x+1)*((3.1x-1.2)-(3X^2-3.1))"};
  * 1.2 Init() // zero Polygon
- * 1.3 Polynom copy() // deep copy semantics (from function interface)
+ * 1.3 Polynom copy() //  deep copy semantics (from function interface!)
  * 
  * 2. Math:
  * 2.1 void multiply(Monom m) // multiply this Polygon by Monom m
