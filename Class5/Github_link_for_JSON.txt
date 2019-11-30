@@ -1,0 +1,5 @@
+Original:
+https://www.journaldev.com/2315/java-json-example
+
+Class github example:
+https://github.com/benmoshe/JSON
