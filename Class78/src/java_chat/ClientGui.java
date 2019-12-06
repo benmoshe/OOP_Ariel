@@ -154,12 +154,12 @@ public class ClientGui extends Thread{
 
 
     // info sur le Chat
-    appendToPane(jtextFilDiscu, "<h4>Les commandes possibles dans le chat sont:</h4>"
+    appendToPane(jtextFilDiscu, "<h4>List of possible commands (simple menu):</h4>"
         +"<ul>"
-        +"<li><b>@nickname</b> pour envoyer un Message privé à l'utilisateur 'nickname'</li>"
-        +"<li><b>#d3961b</b> pour changer la couleur de son pseudo au code hexadécimal indiquer</li>"
-        +"<li><b>;)</b> quelques smileys sont implémentés</li>"
-        +"<li><b>flèche du haut</b> pour reprendre le dernier message tapé</li>"
+            +"<li> regular String - a massege for all (broadcast)</li>"
+        +"<li><b>@nickname</b> private massage (unicast)</li>"
+        +"<li>change color: #d3961b, #3079ab, #e15258, #4d7358 ...</li>"
+        +"<li>The original code is from: https://github.com/pchampio/java-chat</li>"
         +"</ul><br/>");
 
     // On connect
