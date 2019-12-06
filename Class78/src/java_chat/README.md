@@ -13,7 +13,7 @@ A simple java chat application
 
 
 <p align="center">
-  <a href="https://raw.githubusercontent.com/Drakirus/java-chat/master/screen.png">
-    <img alt="ScreenShot~ prompt" src="https://raw.githubusercontent.com/Drakirus/java-chat/master/screen.png">
+  <a href="https://github.com/benmoshe/OOP_Ariel/blob/master/Class78/src/java_chat/screen.png">
+    <img alt="ScreenShot~ prompt" src="https://github.com/benmoshe/OOP_Ariel/blob/master/Class78/src/java_chat/screen.png">
   </a>
 </p>
