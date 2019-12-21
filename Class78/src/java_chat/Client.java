@@ -93,7 +93,8 @@ class ReceivedMessagesHandler implements Runnable {
 
   // I could use a javax.xml.parsers but the goal of Client.java is to keep everything tight and simple
   public static String getTagValue(String xml){
-    return  xml.split(">")[2].split("<")[0] + xml.split("<span>")[1].split("</span>")[0];
+    return  xml.split(">")[2].split("<")[0] +
+            xml.split("<span>")[1].split("</span>")[0];
   }
 
 }

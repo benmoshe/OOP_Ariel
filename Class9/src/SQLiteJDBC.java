@@ -1,5 +1,12 @@
 import java.sql.*;
 
+/**
+ * JDBC + SQLite simple example, code source: https://www.tutorialspoint.com/sqlite/sqlite_java.htm
+ * Requires an SQLite driver: see:
+ * https://bitbucket.org/xerial/sqlite-jdbc/downloads/
+ * https://www.sqlitetutorial.net/sqlite-java/sqlite-jdbc-driver/
+ *
+ */
 public class SQLiteJDBC {
     public static void main( String args[] ) {
         creat();
