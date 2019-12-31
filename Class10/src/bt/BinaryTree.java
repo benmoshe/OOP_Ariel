@@ -7,8 +7,8 @@ import java.util.Iterator;
  * @param <T>
  */
 public class BinaryTree<T> implements binary_tree<T>{
-	private Node<T> _root;
-	private int _mc;
+	protected Node<T> _root;
+	protected int _mc;
 
 	BinaryTree() {_root = null; _mc=0;}
 	BinaryTree(Node<T> x) {
@@ -30,7 +30,7 @@ public class BinaryTree<T> implements binary_tree<T>{
 			int hr = rightBT().height();
 			ans = 1+Math.max(hl,hr);
 		}
-		return 0;
+		return ans;
 	}
 	public boolean isEmpty() {
 		return _root==null;

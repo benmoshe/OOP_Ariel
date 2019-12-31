@@ -1,14 +1,16 @@
 package bt;
 
 import java.util.ArrayList;
+import java.util.Random;
 
 public class MainTest {
 	public static void main(String[] a) {
-		BinaryTree<String> bt1 = new BinaryTree<String>();
+		binary_search_tree<String> bt1 = new BST<String>();
 		int size = 10; 
 		ArrayList<String> data = new ArrayList<String>();
 		for(int i=0;i<size;i++) {
-			String d = ""+i;
+			int r = new Random().nextInt();
+			String d = ""+r;
 			data.add(d);
 			bt1.add(d);
 		}
