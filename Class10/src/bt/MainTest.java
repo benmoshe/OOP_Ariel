@@ -1,6 +1,7 @@
 package bt;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.Random;
 
 public class MainTest {
@@ -20,6 +21,11 @@ public class MainTest {
 		for(int i=0;i<size;i++) {
 			String c = bt1.get(i);
 			System.out.println(i+")"+c);
+		}
+		Iterator<String> itr = bt1.iterator();
+		while(itr.hasNext()) {
+			String c = itr.next();
+			System.out.println(c);
 		}
 	}
 }

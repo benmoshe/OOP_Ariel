@@ -9,8 +9,8 @@ import java.sql.*;
  */
 public class SQLiteJDBC {
     public static void main( String args[] ) {
-        creat();
-        insert();
+      //  creat();
+      //  insert();
        // update();
         select();
 
@@ -125,7 +125,7 @@ public class SQLiteJDBC {
             System.out.println("Opened database successfully");
 
             stmt = c.createStatement();
-            String sql = "UPDATE COMPANY set SALARY = 25000.00 where ID=1;";
+            String sql = "UPDATE COMPANY set SALARY = 23000.00 where ID=1;";
             stmt.executeUpdate(sql);
             c.commit();
 
