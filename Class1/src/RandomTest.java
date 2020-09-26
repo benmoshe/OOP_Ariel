@@ -6,6 +6,8 @@ import java.util.ArrayList;
  ***** Test1: *****
  a[1]=17.0% , a[2]=17.89% , a[3]=17.39% , a[4]=14.7% , a[5]=15.8% , a[6]=17.2% ,
 
+ Minor change - for testing
+
 
  */
 public class RandomTest {
